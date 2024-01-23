@@ -22,13 +22,24 @@ body {
 /* Layout */
 .container {
     margin: 0 auto;
-  
+
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
-  
+
+}
+
+.botao {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    background-color: #c00000;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 25px;
 }
 
 /*Topo do site*/
@@ -59,7 +70,7 @@ header {
 
 label {
     font-size: 3em;
-    padding-right: 15px ;
+    padding-right: 15px;
 }
 
 nav ul {
@@ -73,19 +84,41 @@ nav ul {
     transition: all 0.5s;
 }
 
-#check:checked ~ ul {
+#check:checked~ul {
     right: 0;
 }
 
 nav ul li {
- padding: 20px;
- border-bottom: 1px solid #a9a9a9;
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
 
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
     color: #fff
+}
+
+/* Destaque*/
+
+main {
+    height: 75vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 2.5em;
+}
+
+main h2 {
+    font-size: 1em;
+    margin: 20px 0px 50px 0px
 }
 
 
@@ -96,6 +129,14 @@ nav ul li a{
     .container {
         max-width: 540px;
     }
+
+    /*Destaque */
+
+    main h1,
+    main h2 {
+        text-shadow: #0000 0.05em 0.05em 0.05em;
+    }
+
 }
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -106,6 +147,21 @@ nav ul li a{
     .container {
         max-width: 720px;
     }
+
+    /* Destaque */
+
+    main {
+        height: 45vh;
+    }
+
+    main h1 {
+        font-size: 5.5em;
+    }
+
+    main h2 {
+        font-size: 2em;
+    }
+
 }
 
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -114,6 +170,12 @@ nav ul li a{
     /* Layout */
     .container {
         max-width: 960px;
+    }
+
+    /* Destaque*/
+
+    main {
+        height: 70vh;
     }
 }
 
@@ -137,12 +199,12 @@ nav ul li a{
         margin-top: 30px;
     }
 
-    label{
+    label {
         display: none;
 
     }
 
-    nav ul{
+    nav ul {
         position: static;
         height: auto;
         background-color: transparent;
@@ -150,18 +212,18 @@ nav ul li a{
 
     }
 
-    nav ul li{
+    nav ul li {
         float: left;
         border: 0;
 
-   }
+    }
 
-   nav ul li a {
-    color: #343538 ;
-   }
+    nav ul li a {
+        color: #343538;
+    }
 
-   nav ul li a:hover{
-    color: #c00000;
-   }
+    nav ul li a:hover {
+        color: #c00000;
+    }
 
 }
