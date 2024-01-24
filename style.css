@@ -187,6 +187,38 @@ main h2 {
     height: 191px;
 }
 
+ /* Wireframe */
+
+ #wireframe{
+    padding: 50px 0px;
+    background: url(img/background.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#textoWire{
+    color: #fff;
+    padding: 0px 10px;
+}
+
+#textoWire h2{
+    margin-bottom: 10px;
+}
+
+#textoWire p{
+    margin-bottom: 40px;
+}
+
+#textoWire span{
+    display: none;
+}
+
+#qrcode{
+    display: none;
+}
+
+
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
@@ -321,5 +353,28 @@ main h2 {
         flex-direction: row;
         align-items: center;
     }
+
+    /* Wireframe */
+
+    #wireframe{
+        background-attachment: fixed;
+
+    }
+
+    #wireframe span{
+        display: inline;
+      
+    }
+
+    #qrcode{
+        display: inline;
+    }
+
+    #qrcode img{
+        width: 225px;
+        height: 225px;
+        
+    }
+
 
 }
